@@ -5,16 +5,34 @@ html, body {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 nav li {
   display: inline;
+  padding-left: 35px;
+}
+
+nav img {
+  width: 100px;
+  height: auto;
 }
 
 #navbar {
   position: fixed;
+  display: flex;
   top: 0;
   width: 100%;
-  height: 60px;
+  height: 80px;
   background: white;
+  padding-left: 200px;
+}
+
+#nav-items {
+  padding-top: 48px;
+  margin-left: 5%;
 }
 
 #hero {
