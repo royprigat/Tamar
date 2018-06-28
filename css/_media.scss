@@ -1,0 +1,49 @@
+#mainNav {
+    @media(min-width: 992px) {
+        -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+        letter-spacing: 1px;
+        border-bottom: none;
+        background: transparent;
+        &.navbar-shrink {
+            border-bottom: 1px solid fade-out(white, .7);
+            background: black;
+        }
+        .nav-link.active {
+            outline: none;
+            background-color: rgba(white, .3);
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+.masthead {
+    @media(min-width: 768px) {
+        padding: 0;
+        .intro-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 22px;
+            }
+        }
+    }
+    @media(max-width:400px) {
+        padding: 0;
+        .intro-body {
+            left: 10%;
+            width: 350px;
+            bottom: 30px;
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 22px;
+            }
+        }
+    }
+}

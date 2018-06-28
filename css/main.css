@@ -1,4 +1,55 @@
+@media (min-width: 992px) {
+  #mainNav {
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+    border-bottom: none;
+    background: transparent;
+  }
+  #mainNav.navbar-shrink {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: black;
+  }
+  #mainNav .nav-link.active {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  #mainNav .nav-link.active:hover {
+    color: black;
+  }
+}
+
+@media (min-width: 768px) {
+  .masthead {
+    padding: 0;
+  }
+  .masthead .intro-body .brand-heading {
+    font-size: 100px;
+  }
+  .masthead .intro-body .intro-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 400px) {
+  .masthead {
+    padding: 0;
+  }
+  .masthead .intro-body {
+    left: 10%;
+    width: 350px;
+    bottom: 30px;
+  }
+  .masthead .intro-body .brand-heading {
+    font-size: 100px;
+  }
+  .masthead .intro-body .intro-text {
+    font-size: 22px;
+  }
+}
+
 .masthead {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,11 +67,11 @@
 }
 
 .masthead .intro-body {
-  margin: auto;
-  margin-top: 430px;
-  vertical-align: middle;
-  width: 50%;
-  height: 200px;
+  position: absolute;
+  bottom: 40px;
+  left: 33%;
+  width: 400px;
+  height: 250px;
   background: transparent;
   text-align: left;
 }
@@ -35,19 +86,6 @@
   font-size: 14px;
   font-weight: 200;
   width: 80%;
-}
-
-@media (min-width: 768px) {
-  .masthead {
-    height: 100%;
-    padding: 0;
-  }
-  .masthead .intro-body .brand-heading {
-    font-size: 100px;
-  }
-  .masthead .intro-body .intro-text {
-    font-size: 22px;
-  }
 }
 
 .separator {
@@ -73,8 +111,12 @@
   background: whitesmoke;
 }
 
-#contact {
+#about {
   height: 500px;
+}
+
+#contact {
+  height: 700px;
   background: white;
   background-image: url("../img/dekel.png");
   background-size: 400px;
@@ -185,32 +227,12 @@ a:focus, a:hover {
   color: fade(white, 80%);
   outline: none;
   background-color: transparent;
+  text-decoration: underline;
 }
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
   background-color: transparent;
-}
-
-@media (min-width: 992px) {
-  #mainNav {
-    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-    letter-spacing: 1px;
-    border-bottom: none;
-    background: transparent;
-  }
-  #mainNav.navbar-shrink {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background: white;
-  }
-  #mainNav .nav-link.active {
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-  #mainNav .nav-link.active:hover {
-    color: white;
-  }
 }
 
 .about-section {
@@ -223,12 +245,6 @@ a:focus, a:hover {
 #map {
   width: 100%;
   height: 300px;
-}
-
-@media (min-width: 992px) {
-  #map {
-    height: 350px;
-  }
 }
 
 ::-moz-selection {
