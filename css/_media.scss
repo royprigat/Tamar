@@ -34,15 +34,17 @@
     }
     @media(max-width:400px) {
         padding: 0;
+        background-size: 400%;
+        background-position: -170px -250px;
         .navbar {
             padding-left: 23px !important;
         }
         .intro-body {
-            left: 10%;
+            left: 60px;
             width: 90%;
-            bottom: 30px;
+            bottom: 0px;
             h1 {
-                font-size: 30px;
+                font-size: 25px;
             }
             .intro-text {
                 font-size: 22px;

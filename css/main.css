@@ -123,17 +123,19 @@ footer > div {
 @media (max-width: 400px) {
   .masthead {
     padding: 0;
+    background-size: 400%;
+    background-position: -170px -250px;
   }
   .masthead .navbar {
     padding-left: 23px !important;
   }
   .masthead .intro-body {
-    left: 10%;
+    left: 60px;
     width: 90%;
-    bottom: 30px;
+    bottom: 0px;
   }
   .masthead .intro-body h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   .masthead .intro-body .intro-text {
     font-size: 22px;
