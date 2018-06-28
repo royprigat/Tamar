@@ -1,34 +1,38 @@
-.masthead {
+header {
   position: relative;
   width: 100%;
   height: 100vh;
   text-align: center;
-  color: white;
+  color: black;
   background: url("../img/hero-necklace.png") no-repeat center;
   background-color: white;
   background-size: cover;
 }
 
-.masthead .intro-body {
+header .intro-body {
   position: absolute;
   bottom: 40px;
   left: 33%;
-  width: 400px;
+  width: 45%;
   height: 250px;
   background: transparent;
   text-align: left;
 }
 
-.masthead .intro-body h1 {
-  font-size: 50px;
+header .intro-body h1 {
+  font-size: 40px;
+  font-weight: 600;
 }
 
-.masthead .intro-body .intro-text {
+header .intro-body a:hover {
+  text-decoration: none;
+}
+
+header .intro-body .intro-text {
   margin-top: 15px;
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 200;
-  width: 65%;
 }
 
 .separator {
@@ -39,7 +43,7 @@
 
 #discover-btn {
   color: white;
-  background: #050e2c;
+  background: #38010c;
   padding: 8px;
   border-radius: 3px;
 }
@@ -78,68 +82,13 @@ footer {
           flex-direction: column;
   width: 100%;
   height: 300px;
-  background: #050e2c;
+  background: #38010c;
   color: white;
   font-size: 12px;
 }
 
 footer > div {
   margin: auto;
-}
-
-@media (min-width: 992px) {
-  #mainNav {
-    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-    letter-spacing: 1px;
-    border-bottom: none;
-    background: transparent;
-  }
-  #mainNav.navbar-shrink {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    background: black;
-  }
-  #mainNav .nav-link.active {
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-  #mainNav .nav-link.active:hover {
-    color: black;
-  }
-}
-
-@media (min-width: 768px) {
-  .masthead {
-    padding: 0;
-  }
-  .masthead .intro-body .brand-heading {
-    font-size: 100px;
-  }
-  .masthead .intro-body .intro-text {
-    font-size: 22px;
-  }
-}
-
-@media (max-width: 400px) {
-  .masthead {
-    padding: 0;
-    background-size: 400%;
-    background-position: -170px -250px;
-  }
-  .masthead .navbar {
-    padding-left: 23px !important;
-  }
-  .masthead .intro-body {
-    left: 60px;
-    width: 90%;
-    bottom: 0px;
-  }
-  .masthead .intro-body h1 {
-    font-size: 25px;
-  }
-  .masthead .intro-body .intro-text {
-    font-size: 22px;
-  }
 }
 
 body {
@@ -160,89 +109,55 @@ html {
   outline: none !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: black;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}
-
 a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
-
-a:focus, a:hover {
-  text-decoration: none;
   color: black;
 }
 
-#mainNav {
-  margin-bottom: 0;
+a:hover {
+  color: black;
+}
+
+.container-fluid {
+  margin: 0;
   padding: 0;
-  padding-left: 60px;
+}
+
+#mainNav {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10%;
   background-color: transparent;
   font-size: 14px;
 }
 
 #mainNav .navbar-toggler {
-  font-size: 14px;
-  padding: 11px;
-  color: white;
-  border: 1px solid white;
-}
-
-#mainNav .navbar-brand {
-  font-weight: 700;
-  padding: 0;
-}
-
-#mainNav a {
+  margin-right: 20px;
+  margin-top: 10px;
   color: black;
+  border: none;
 }
 
 #mainNav .navbar-nav {
-  margin-left: 70px !important;
+  margin-left: 45px !important;
   padding-top: 35px;
 }
 
 #mainNav .navbar-nav .nav-item {
-  -webkit-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   margin-left: 30px;
+  color: black;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
-  color: fade(white, 80%);
   outline: none;
-  background-color: transparent;
   text-decoration: underline;
 }
 
-#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
-  outline: none;
-  background-color: transparent;
-}
-
-.about-section {
-  color: white;
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
-  background-color: grey;
-  background-size: cover;
-}
-
-#map {
-  width: 100%;
-  height: 300px;
+#mainNav .navbar-nav .nav-item a {
+  color: black;
 }
 
 ::-moz-selection {
@@ -268,4 +183,89 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 350px) {
+  header {
+    background-position: -130px -190px;
+    background-size: 400%;
+  }
+  header .intro-body {
+    bottom: 5px;
+    left: 25%;
+    width: 55%;
+    height: 200px;
+  }
+  header .intro-body h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  header .intro-body a:hover {
+    text-decoration: none;
+  }
+  header .intro-body .intro-text {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  header .intro-body .separator {
+    width: 50px;
+    border: 1px solid black;
+    margin-left: 1px;
+  }
+  #contact {
+    height: 400px;
+    background-size: 150px;
+    background-position: left bottom;
+  }
+  footer {
+    height: 180px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  header {
+    background-position: -130px -190px;
+    background-size: 400%;
+  }
+  header .intro-body {
+    bottom: 5px;
+    left: 25%;
+    width: 55%;
+    height: 200px;
+  }
+  header .intro-body h1 {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  header .intro-body a:hover {
+    text-decoration: none;
+  }
+  header .intro-body .intro-text {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  header .intro-body .separator {
+    width: 50px;
+    border: 1px solid black;
+    margin-left: 1px;
+  }
+  #contact {
+    height: 400px;
+    background-size: 150px;
+    background-position: left bottom;
+  }
+  footer {
+    height: 180px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 /*# sourceMappingURL=main.css.map */

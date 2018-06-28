@@ -1,54 +1,103 @@
-#mainNav {
-    @media(min-width: 992px) {
-        -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-        -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-        transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
-        letter-spacing: 1px;
-        border-bottom: none;
-        background: transparent;
-        &.navbar-shrink {
-            border-bottom: 1px solid fade-out(white, .7);
-            background: black;
-        }
-        .nav-link.active {
-            outline: none;
-            background-color: rgba(white, .3);
-            &:hover {
-                color: black;
-            }
-        }
-    }
-}
-
-.masthead {
-    @media(min-width: 768px) {
-        padding: 0;
-        .intro-body {
-            .brand-heading {
-                font-size: 100px;
-            }
-            .intro-text {
-                font-size: 22px;
-            }
-        }
-    }
-    @media(max-width:400px) {
-        padding: 0;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 350px) {
+    header {
+        background-position: -130px -190px;
         background-size: 400%;
-        background-position: -170px -250px;
-        .navbar {
-            padding-left: 23px !important;
-        }
         .intro-body {
-            left: 60px;
-            width: 90%;
-            bottom: 0px;
+            bottom: 5px;
+            left: 25%;
+            width: 55%;
+            height: 200px;
             h1 {
-                font-size: 25px;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            a:hover {
+                text-decoration: none;
             }
             .intro-text {
-                font-size: 22px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                font-size: 14px;
+                font-weight: 200;
+            }
+            .separator {
+                width: 50px;
+                border: 1px solid black;
+                margin-left: 1px;
             }
         }
     }
+
+    #contact {
+        height: 400px;
+        background-size: 150px;
+        background-position: left bottom;
+    }
+
+    footer {
+        height: 180px;
+    }
+} 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header {
+        background-position: -130px -190px;
+        background-size: 400%;
+        .intro-body {
+            bottom: 5px;
+            left: 25%;
+            width: 55%;
+            height: 200px;
+            h1 {
+                font-size: 20px;
+                font-weight: 600;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+            .intro-text {
+                margin-top: 15px;
+                margin-bottom: 20px;
+                font-size: 14px;
+                font-weight: 200;
+            }
+            .separator {
+                width: 50px;
+                border: 1px solid black;
+                margin-left: 1px;
+            }
+        }
+    }
+
+    #contact {
+        height: 400px;
+        background-size: 150px;
+        background-position: left bottom;
+    }
+
+    footer {
+        height: 180px;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
