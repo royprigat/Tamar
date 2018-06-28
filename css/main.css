@@ -10,7 +10,7 @@
   height: 100vh;
   text-align: center;
   color: white;
-  background: url("../img/hero-necklace.png") no-repeat bottom;
+  background: url("../img/hero-necklace.png") no-repeat center;
   background-color: white;
   background-size: cover;
 }
@@ -68,6 +68,36 @@
           box-shadow: 0 0 5px 0 black;
 }
 
+#collection {
+  height: 1000px;
+  background: whitesmoke;
+}
+
+#contact {
+  height: 500px;
+  background: lightgoldenrodyellow;
+  background-attachment: fixed;
+}
+
+footer {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 300px;
+  background: #050e2c;
+  color: white;
+  font-size: 12px;
+}
+
+footer > div {
+  margin: auto;
+}
+
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   position: relative;
@@ -98,23 +128,13 @@ h6 {
 }
 
 p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0 0 25px;
-}
-
-@media (min-width: 768px) {
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin: 0 0 35px;
-  }
+  padding: 0;
+  margin: 0;
 }
 
 a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #050e2c;
 }
 
 a:focus, a:hover {
@@ -125,8 +145,8 @@ a:focus, a:hover {
 #mainNav {
   margin-bottom: 0;
   padding: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: white;
+  padding-left: 60px;
+  background-color: transparent;
   font-size: 14px;
 }
 
@@ -148,6 +168,7 @@ a:focus, a:hover {
 
 #mainNav .navbar-nav {
   margin-left: 70px !important;
+  padding-top: 35px;
 }
 
 #mainNav .navbar-nav .nav-item {
@@ -188,11 +209,6 @@ a:focus, a:hover {
   }
 }
 
-.content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
 .about-section {
   color: white;
   background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
@@ -206,43 +222,9 @@ a:focus, a:hover {
 }
 
 @media (min-width: 992px) {
-  .content-section {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
   #map {
     height: 350px;
   }
-}
-
-ul.banner-social-buttons {
-  margin-top: 0;
-}
-
-@media (max-width: 1199px) {
-  ul.banner-social-buttons {
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 767px) {
-  ul.banner-social-buttons li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.banner-social-buttons li:last-child {
-    margin-bottom: 0;
-  }
-}
-
-footer {
-  padding: 50px 0;
-}
-
-footer p {
-  font-size: 14px;
-  margin: 0;
 }
 
 ::-moz-selection {
