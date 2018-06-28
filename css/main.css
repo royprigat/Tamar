@@ -17,7 +17,7 @@
 
 .masthead .intro-body {
   margin: auto;
-  margin-top: 450px;
+  margin-top: 430px;
   vertical-align: middle;
   width: 50%;
   height: 200px;
@@ -75,7 +75,11 @@
 
 #contact {
   height: 500px;
-  background: lightgoldenrodyellow;
+  background: white;
+  background-image: url("../img/dekel.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: left;
   background-attachment: fixed;
 }
 
