@@ -1,0 +1,62 @@
+.masthead {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    background: url('../img/hero-necklace.png') no-repeat bottom;
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .intro-body {
+        margin: auto;
+        margin-top: 450px;
+        vertical-align: middle;
+        width: 50%;
+        height: 200px;
+        background: transparent;
+        text-align: left;
+        .brand-heading {
+            font-size: 50px;
+        }
+        .intro-text {
+            margin-top: 15px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            font-weight: 200;
+            width: 80%;
+        }
+    }
+    @media(min-width:768px) {
+        height: 100%;
+        padding: 0;
+        .intro-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.separator {
+    width: 60px;
+    border: 2px solid black;
+    margin-left: 3px;
+}
+
+#discover-btn {
+    color: white;
+    background: $primary;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+#discover-btn:hover {
+    box-shadow: 0 0 5px 0 black;
+}

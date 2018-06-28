@@ -1,3 +1,73 @@
+.masthead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background: url("../img/hero-necklace.png") no-repeat bottom;
+  background-color: white;
+  background-size: cover;
+}
+
+.masthead .intro-body {
+  margin: auto;
+  margin-top: 450px;
+  vertical-align: middle;
+  width: 50%;
+  height: 200px;
+  background: transparent;
+  text-align: left;
+}
+
+.masthead .intro-body .brand-heading {
+  font-size: 50px;
+}
+
+.masthead .intro-body .intro-text {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 200;
+  width: 80%;
+}
+
+@media (min-width: 768px) {
+  .masthead {
+    height: 100%;
+    padding: 0;
+  }
+  .masthead .intro-body .brand-heading {
+    font-size: 100px;
+  }
+  .masthead .intro-body .intro-text {
+    font-size: 22px;
+  }
+}
+
+.separator {
+  width: 60px;
+  border: 2px solid black;
+  margin-left: 3px;
+}
+
+#discover-btn {
+  color: white;
+  background: #050e2c;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+#discover-btn:hover {
+  -webkit-box-shadow: 0 0 5px 0 black;
+          box-shadow: 0 0 5px 0 black;
+}
+
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   position: relative;
@@ -23,7 +93,6 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  margin: 0 0 35px;
   letter-spacing: 1px;
   color: black;
 }
@@ -119,76 +188,15 @@ a:focus, a:hover {
   }
 }
 
-.masthead {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  color: white;
-  background: url("../img/hero-necklace.png") no-repeat bottom center scroll;
-  background-color: white;
-  background-size: cover;
-}
-
-.masthead .intro-body {
-  margin: auto;
-  margin-top: 450px;
-  vertical-align: middle;
-  width: 50%;
-  height: 200px;
-  background: transparent;
-  text-align: left;
-}
-
-.masthead .intro-body .brand-heading {
-  font-size: 50px;
-}
-
-.masthead .intro-body .intro-text {
-  font-size: 14px;
-  font-weight: 200;
-}
-
-@media (min-width: 768px) {
-  .masthead {
-    height: 100%;
-    padding: 0;
-  }
-  .masthead .intro-body .brand-heading {
-    font-size: 100px;
-  }
-  .masthead .intro-body .intro-text {
-    font-size: 22px;
-  }
-}
-
-#discover-btn {
-  color: white;
-  background: #050e2c;
-  padding: 8px;
-  border-radius: 3px;
-}
-
-#discover-btn:hover {
-  -webkit-box-shadow: 0 0 5px 0 black;
-          box-shadow: 0 0 5px 0 black;
-}
-
 .content-section {
   padding-top: 150px;
   padding-bottom: 150px;
 }
 
-.download-section {
+.about-section {
   color: white;
   background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
-  background-color: black;
+  background-color: grey;
   background-size: cover;
 }
 
@@ -205,28 +213,6 @@ a:focus, a:hover {
   #map {
     height: 350px;
   }
-}
-
-.btn {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  border-radius: 0;
-}
-
-.btn-default {
-  color: #050e2c;
-  border: 1px solid #050e2c;
-  background-color: transparent;
-}
-
-.btn-default:focus, .btn-default:hover {
-  color: black;
-  border: 1px solid #050e2c;
-  outline: none;
-  background-color: #050e2c;
 }
 
 ul.banner-social-buttons {
