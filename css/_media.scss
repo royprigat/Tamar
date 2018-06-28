@@ -34,12 +34,15 @@
     }
     @media(max-width:400px) {
         padding: 0;
+        .navbar {
+            padding-left: 23px !important;
+        }
         .intro-body {
             left: 10%;
-            width: 350px;
+            width: 90%;
             bottom: 30px;
-            .brand-heading {
-                font-size: 100px;
+            h1 {
+                font-size: 30px;
             }
             .intro-text {
                 font-size: 22px;

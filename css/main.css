@@ -1,12 +1,5 @@
 .masthead {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -26,7 +19,7 @@
   text-align: left;
 }
 
-.masthead .intro-body .brand-heading {
+.masthead .intro-body h1 {
   font-size: 50px;
 }
 
@@ -131,13 +124,16 @@ footer > div {
   .masthead {
     padding: 0;
   }
+  .masthead .navbar {
+    padding-left: 23px !important;
+  }
   .masthead .intro-body {
     left: 10%;
-    width: 350px;
+    width: 90%;
     bottom: 30px;
   }
-  .masthead .intro-body .brand-heading {
-    font-size: 100px;
+  .masthead .intro-body h1 {
+    font-size: 30px;
   }
   .masthead .intro-body .intro-text {
     font-size: 22px;
