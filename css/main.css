@@ -228,7 +228,7 @@ img::-moz-selection {
 @media only screen and (max-width: 600px) {
   header {
     background-position: -130px -190px;
-    background-size: 400%;
+    background-size: 380%;
   }
   header .intro-body {
     bottom: 5px;
