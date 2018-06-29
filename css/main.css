@@ -188,7 +188,7 @@ img::-moz-selection {
   background: transparent;
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 350px and down) */
 @media only screen and (max-width: 350px) {
   #mainNav > a > img {
     width: 60px;
@@ -197,14 +197,13 @@ img::-moz-selection {
     width: 80px;
   }
   header {
-    background-position: -130px -190px;
-    background-size: 400%;
+    background-position: -130px -130px;
+    background-size: 300%;
   }
   header .intro-body {
-    bottom: 5px;
+    bottom: 20px;
     left: 25%;
     width: 55%;
-    height: 200px;
   }
   header .intro-body h1 {
     font-size: 20px;
@@ -234,8 +233,8 @@ img::-moz-selection {
   }
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 350px to 600px) */
+@media only screen and (max-width: 600px) and (min-width: 350px) {
   #mainNav > a > img {
     width: 60px;
   }
@@ -276,6 +275,13 @@ img::-moz-selection {
   }
   footer {
     height: 180px;
+  }
+}
+
+/* Small and long devices (phones, 350px to 600px wide, at least 700px long) */
+@media only screen and (max-width: 600px) and (min-width: 350px) and (min-height: 700px) {
+  header .intro-body {
+    bottom: 180px;
   }
 }
 

@@ -1,20 +1,19 @@
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 350px and down) */
 
 @media only screen and (max-width: 350px) {
-    #mainNav > a > img {
+    #mainNav>a>img {
         width: 60px;
     }
-    footer > div > img {
+    footer>div>img {
         width: 80px;
     }
     header {
-        background-position: -130px -190px;
-        background-size: 400%;
+        background-position: -130px -130px;
+        background-size: 300%;
         .intro-body {
-            bottom: 5px;
+            bottom: 20px;
             left: 25%;
             width: 55%;
-            height: 200px;
             h1 {
                 font-size: 20px;
                 font-weight: 600;
@@ -45,17 +44,15 @@
     }
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 350px to 600px) */
 
-@media only screen and (max-width: 600px) {
-    #mainNav > a > img {
+@media only screen and (max-width: 600px) and (min-width: 350px) {
+    #mainNav>a>img {
         width: 60px;
     }
-
-    footer > div > img {
+    footer>div>img {
         width: 80px;
     }
-
     header {
         background-position: -110px -150px;
         background-size: 310%;
@@ -93,6 +90,16 @@
     }
 }
 
+/* Small and long devices (phones, 350px to 600px wide, at least 700px long) */
+
+@media only screen and (max-width: 600px) and (min-width: 350px) and (min-height: 700px) {
+    header {
+        .intro-body {
+            bottom: 180px;
+        }
+    }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (min-width: 600px) {}
@@ -100,7 +107,7 @@
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
-    footer > div > img {
+    footer>div>img {
         width: 100px;
     }
     header {
@@ -131,10 +138,10 @@
     #mainNav {
         font-size: 16px;
     }
-    #mainNav > a > img {
+    #mainNav>a>img {
         width: 80px;
     }
-    footer > div > img {
+    footer>div>img {
         width: 100px;
     }
     header {
@@ -165,10 +172,10 @@
     #mainNav {
         font-size: 18px;
     }
-    #mainNav > a > img {
+    #mainNav>a>img {
         width: 80px;
     }
-    footer > div > img {
+    footer>div>img {
         width: 100px;
     }
     header {
