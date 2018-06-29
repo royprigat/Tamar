@@ -230,11 +230,11 @@ img::-moz-selection {
     width: 60px;
   }
   header {
-    background-position: -130px -170px;
-    background-size: 350%;
+    background-position: -110px -160px;
+    background-size: 310%;
   }
   header .intro-body {
-    bottom: 120px;
+    bottom: 200px;
     left: 23%;
     width: 55%;
   }
