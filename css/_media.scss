@@ -1,6 +1,9 @@
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 350px) {
+    #mainNav > a > img {
+        width: 60px;
+    }
     header {
         background-position: -130px -190px;
         background-size: 400%;
