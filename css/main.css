@@ -246,7 +246,7 @@ img::-moz-selection {
     background-size: 310%;
   }
   header .intro-body {
-    bottom: 45px;
+    bottom: 5%;
     left: 23%;
     width: 55%;
   }
