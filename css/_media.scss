@@ -42,6 +42,28 @@
     footer {
         height: 180px;
     }
+
+    .grid-container {
+        width: 100%;
+        height: 100%;
+        grid-template-areas: 
+        "a1 a1 a1 a1" 
+        "a2 a2 a3 a3" 
+        "a4 a4 a5 a5" 
+        "a6 a6 a7 a8"
+        "b1 b1 b1 b1"
+        "b2 b2 b3 b3"
+        "b4 b4 b5 b5"
+        "b6 b6 b6 b6"
+        "c1 c1 c1 c1"
+        "c2 c2 c3 c3"
+        "c4 c4 c5 c5"
+        "c6 c6 c6 c6";
+    
+        grid-template-rows: repeat(12, 200px);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+    }
 }
 
 /* Extra small devices (phones, 350px to 600px) */
@@ -87,6 +109,27 @@
     }
     footer {
         height: 180px;
+    }
+    .grid-container {
+        width: 100%;
+        height: 100%;
+        grid-template-areas: 
+        "a1 a1 a1 a1" 
+        "a2 a2 a3 a3" 
+        "a4 a4 a5 a5" 
+        "a6 a6 a7 a8"
+        "b1 b1 b1 b1"
+        "b2 b2 b3 b3"
+        "b4 b4 b5 b5"
+        "b6 b6 b6 b6"
+        "c1 c1 c1 c1"
+        "c2 c2 c3 c3"
+        "c4 c4 c5 c5"
+        "c6 c6 c6 c6";
+    
+        grid-template-rows: repeat(12, 200px);
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
     }
 }
 
