@@ -193,6 +193,9 @@ img::-moz-selection {
   #mainNav > a > img {
     width: 60px;
   }
+  footer > div > img {
+    width: 80px;
+  }
   header {
     background-position: -130px -190px;
     background-size: 400%;
@@ -236,6 +239,9 @@ img::-moz-selection {
   #mainNav > a > img {
     width: 60px;
   }
+  footer > div > img {
+    width: 80px;
+  }
   header {
     background-position: -110px -150px;
     background-size: 310%;
@@ -276,6 +282,9 @@ img::-moz-selection {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  footer > div > img {
+    width: 100px;
+  }
   header .intro-body {
     bottom: 150px;
     left: 31%;
@@ -304,6 +313,9 @@ img::-moz-selection {
   #mainNav > a > img {
     width: 80px;
   }
+  footer > div > img {
+    width: 100px;
+  }
   header .intro-body {
     bottom: 230px;
     left: 29%;
@@ -331,6 +343,9 @@ img::-moz-selection {
   }
   #mainNav > a > img {
     width: 80px;
+  }
+  footer > div > img {
+    width: 100px;
   }
   header .intro-body {
     bottom: 70px;
