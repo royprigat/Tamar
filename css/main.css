@@ -119,6 +119,10 @@ a:hover {
   color: black;
 }
 
+.material-icons {
+  margin-top: 10px;
+}
+
 .container-fluid {
   margin: 0;
   padding: 0;
