@@ -132,7 +132,11 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    #mainNav>a>img {
+        width: 80px;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 
@@ -145,7 +149,7 @@
     }
     header {
         .intro-body {
-            bottom: 150px;
+            bottom: 8%;
             left: 31%;
             h1 {
                 font-size: 45px;
@@ -179,7 +183,7 @@
     }
     header {
         .intro-body {
-            bottom: 230px;
+            bottom: 8%;
             left: 29%;
             h1 {
                 font-size: 50px;
@@ -213,7 +217,7 @@
     }
     header {
         .intro-body {
-            bottom: 70px;
+            bottom: 8%;
             left: 31%;
             h1 {
                 font-size: 50px;

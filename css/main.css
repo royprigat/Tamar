@@ -54,8 +54,52 @@ header .intro-body .intro-text {
 }
 
 #collection {
-  height: 1000px;
   background: whitesmoke;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+      grid-template-areas: "a1 a1 a1 a1 . . . . . . . ." "b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1" "c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1" "d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1";
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-gap: 3px;
+}
+
+.grid-container .neck {
+  height: 200px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: a1;
+  background-color: #8ca0ff;
+}
+
+.grid-container .rings {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: b1;
+  background-color: #ffa08c;
+}
+
+.grid-container .bracelets {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: c1;
+  background-color: #ffff64;
+}
+
+.grid-container .ear {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-area: d1;
+  background-color: #8cffa0;
 }
 
 #about {
@@ -316,6 +360,12 @@ img::-moz-selection {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #mainNav > a > img {
+    width: 80px;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #mainNav > a > img {
@@ -325,7 +375,7 @@ img::-moz-selection {
     width: 100px;
   }
   header .intro-body {
-    bottom: 150px;
+    bottom: 8%;
     left: 31%;
   }
   header .intro-body h1 {
@@ -356,7 +406,7 @@ img::-moz-selection {
     width: 100px;
   }
   header .intro-body {
-    bottom: 230px;
+    bottom: 8%;
     left: 29%;
   }
   header .intro-body h1 {
@@ -387,7 +437,7 @@ img::-moz-selection {
     width: 100px;
   }
   header .intro-body {
-    bottom: 70px;
+    bottom: 8%;
     left: 31%;
   }
   header .intro-body h1 {

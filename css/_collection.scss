@@ -1,4 +1,33 @@
 #collection {
-    height: 1000px;
     background: rgb(245, 245, 245);
+}
+
+.grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "a1 a1 a1 a1 . . . . . . . ." "b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1" "c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1 c1" "d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1 d1";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 3px;
+}
+
+.grid-container .neck {
+    height: 200px;
+    grid-area: a1;
+    background-color: #8ca0ff;
+}
+
+.grid-container .rings {
+    grid-area: b1;
+    background-color: #ffa08c;
+}
+
+.grid-container .bracelets {
+    grid-area: c1;
+    background-color: #ffff64;
+}
+
+.grid-container .ear {
+    grid-area: d1;
+    background-color: #8cffa0;
 }
