@@ -233,11 +233,11 @@ img::-moz-selection {
     width: 60px;
   }
   header {
-    background-position: -110px -160px;
+    background-position: -110px -150px;
     background-size: 310%;
   }
   header .intro-body {
-    bottom: 200px;
+    bottom: 45px;
     left: 23%;
     width: 55%;
   }
