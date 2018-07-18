@@ -29,9 +29,21 @@
 
 .hero-text
     position: absolute
-    bottom: 30%
+    bottom: 20%
     left: 30%
     font-size: 3vw
+    color: black
+    .subtitle
+        width: 55%
+        font-weight: 200
+        font-size: 1vw
+
+.separator
+    width: 35px
+    height: 5px
+    background: black
+    margin: 3px
+    margin-bottom: 10px
 
 
 
@@ -49,11 +61,16 @@
     .hero-text
         font-size: 6vw
         left: 12%
+        .subtitle
+            width: 80%
+            font-size: 3vw
     
 
-@media (min-width: 575px) and (max-width: 1200px)
+@media (min-width: 575px) and (max-width: 1050px)
     #hero
         background-size: cover
         background-position: -130px 0px
     .hero-text
         font-size: 4vw
+        .subtitle
+            font-size: 2vw
