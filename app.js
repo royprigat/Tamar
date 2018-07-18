@@ -28,14 +28,11 @@ app.use(sassMiddleware({
   sourceMap: true,
   outputStyle: 'compressed'
 }));
-app.use('/^\/css\/([a-z-]+)\.css$/', postcssMiddleware({
+app.use('/css', postcssMiddleware({
+  plugins: [autoprefixer({})],
   src: function(req) {
-		var folder = req.params[0];
-		return path.join('styles', folder, '*.css');
-	},
-  plugins: [
-    autoprefixer()
-  ]
+    return req.url;
+  }
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
