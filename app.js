@@ -5,6 +5,7 @@ var helmet = require('helmet');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
+var postcssMiddleware = require('postcss-middleware');
 var autoprefixer = require('autoprefixer');
 
 var indexRouter = require('./routes/index');
@@ -25,7 +26,16 @@ app.use(sassMiddleware({
   dest: path.join(__dirname, 'public'),
   indentedSyntax: true, // true = .sass and false = .scss
   sourceMap: true,
-  plugins: autoprefixer()
+  outputStyle: 'compressed'
+}));
+app.use('/^\/css\/([a-z-]+)\.css$/', postcssMiddleware({
+  src: function(req) {
+		var folder = req.params[0];
+		return path.join('styles', folder, '*.css');
+	},
+  plugins: [
+    autoprefixer()
+  ]
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
