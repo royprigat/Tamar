@@ -1,7 +1,6 @@
 {
   "name": "tamar",
   "version": "1.0",
-  "private": true,
   "main": "server.js",
   "scripts": {
     "start": "node ./bin/www"
