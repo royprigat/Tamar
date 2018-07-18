@@ -5,13 +5,12 @@ var helmet = require('helmet');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
-var postcssMiddleware = require('postcss-middleware');
-var autoprefixer = require('autoprefixer');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
+app.use(helmet());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -27,12 +26,6 @@ app.use(sassMiddleware({
   indentedSyntax: true, // true = .sass and false = .scss
   sourceMap: true,
   outputStyle: 'compressed'
-}));
-app.use('/css', postcssMiddleware({
-  plugins: [autoprefixer({})],
-  src: function(req) {
-    return req.url;
-  }
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 

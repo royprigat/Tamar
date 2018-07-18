@@ -1,7 +1,22 @@
-.nav
-    
-    
-    
+.navbar
+    padding-top: 30px
+    padding-left: 13%
+    img
+        width: 90px
+    ul
+        padding-top: 40px
+        padding-left: 10%
+        li
+            margin-right: 18%
+    a
+        color: black !important
+    a:hover
+        text-decoration: underline
+
+.navbar-toggler
+    margin-right: 12%
+    margin-top: 10px
+
 #hero
     width: 100%
     height: 100vh
@@ -10,3 +25,31 @@
     background-position: 0px -50px
     background-repeat: no-repeat
     background-color: #f6f6f6
+
+
+.hero-text
+    position: absolute
+    bottom: 30%
+    left: 30%
+    font-size: 3vw
+
+
+
+@media (max-width: 575px)
+    .navbar
+        padding-left: 10%
+        img
+            width: 70px
+    #hero
+        background-size: 160%
+        background-position: -175px 135px
+    .hero-text
+        font-size: 6vw
+        left: 12%
+
+@media (min-width: 575px) and (max-width: 1200px)
+    #hero
+        background-size: cover
+        background-position: -130px 0px
+    .hero-text
+        font-size: 4vw
