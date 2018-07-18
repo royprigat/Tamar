@@ -57,6 +57,19 @@ header .intro-body .intro-text {
   padding: 20px;
 }
 
+#photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.photo {
+  width: 30%;
+  height: auto;
+}
+
 .grid-container {
   display: -ms-grid;
   display: grid;
@@ -416,11 +429,11 @@ img::-moz-selection {
     width: 80px;
   }
   header {
-    background-position: -110px -150px;
-    background-size: 310%;
+    background-position: -300px 0px;
+    background-size: 200%;
   }
   header .intro-body {
-    bottom: 5%;
+    bottom: 15%;
     left: 23%;
     width: 55%;
   }
