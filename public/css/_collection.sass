@@ -33,7 +33,7 @@
   box-shadow: -2px 2px 5px 0px rgba(#444, 0.4)
   transition: transform 0.3s ease-in-out
   cursor: pointer
-      
+  counter-increment: item-counter
   
   &:after 
     content: ''
@@ -70,8 +70,12 @@
     background: #fff
     text-transform: lowercase
     letter-spacing: 1px
+    @media screen and (max-width: 400px)
+      padding: 3px
+      font-size: 14px
     
-    &:before 
+    &:before
+      content: counter(item-counter) 
       font-weight: bold
       font-size: 1.1rem
       padding-right: 0.5em
