@@ -20,27 +20,27 @@
   grid-column-start: auto
   grid-row-start: auto
   color: #fff
-  background: url('../img/necklace-hero.png')
+  background: url('../img/neck-wood-gold.png')
   background-size: cover
   background-position: center
   box-shadow: -2px 2px 5px 0px rgba(#444, 0.4)
   transition: transform 0.3s ease-in-out
   cursor: pointer
-  counter-increment: item-counter
   
+  &:nth-of-type(2n) 
+    background-image: url('../img/neck-wood-gold.png')
+
   &:nth-of-type(3n) 
-    background-image: url('../img/table.jpg')
+    background-image: url('../img/ring-red.png')
   
   &:nth-of-type(4n) 
-    background-image: url('../img/table.jpg')
-  
+    background-image: url('../img/table-2.jpg')
   
   &:nth-of-type(5n) 
-    background-image: url('../img/necklace-hero.png')
-  
+    background-image: url('../img/table.jpg')
   
   &:nth-of-type(6n) 
-    background-image: url('../img/necklace-hero.png')
+    background-image: url('../img/ring-red-2.png')
   
   &:after 
     content: ''
@@ -86,3 +86,30 @@
       font-size: 1.1rem
       padding-right: 0.5em
       color: #444
+    
+    span
+        float: right
+
+.static-item 
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  box-sizing: border-box
+  background: #0c9a9a
+  color: #fff
+  grid-column-start: auto
+  grid-row-start: auto
+  color: #fff
+  background: url('../img/table.jpg')
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  box-shadow: -2px 2px 5px 0px rgba(#444, 0.4)
+  
+  &-full 
+    grid-column-end: auto
+
+    @media screen and (min-width: 768px) 
+      grid-column: 1/-1
+      grid-row-end: span 2
