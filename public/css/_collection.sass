@@ -44,9 +44,9 @@
     opacity: 0.05
     transition: opacity 0.3s ease-in-out
    
-  &:hover 
-    transform: scale(1.02)
-    
+  &:hover
+    .item-details
+      opacity: 1 
     &:after 
       opacity: 0
     
@@ -62,7 +62,8 @@
       grid-column: 1/-1
       grid-row-end: span 2
     
-  &-details 
+  &-details
+    opacity: 0 
     position: relative
     z-index: 1
     padding: 8px
@@ -70,10 +71,11 @@
     background: #fff
     text-transform: lowercase
     letter-spacing: 1px
+    transition: opacity 0.3s ease-in-out
     @media screen and (max-width: 400px)
       padding: 3px
       font-size: 14px
-    
+
     &:before
       content: counter(item-counter) 
       font-weight: bold
