@@ -45,6 +45,8 @@
     transition: opacity 0.3s ease-in-out
    
   &:hover
+    .overlay 
+      opacity: 1
     .item-details
       opacity: 1 
     &:after 
@@ -77,7 +79,6 @@
       font-size: 14px
 
     &:before
-      content: counter(item-counter) 
       font-weight: bold
       font-size: 1.1rem
       padding-right: 0.5em
@@ -111,3 +112,17 @@
     @media screen and (max-width: 400px) 
       grid-column: 1/-1
       grid-row-end: span 2
+
+.overlay 
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: 100%
+  width: 100%
+  opacity: 0
+  transition: .3s ease-in-out
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
