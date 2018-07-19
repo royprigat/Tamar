@@ -23,4 +23,7 @@ $(document).ready(function() {
       );
     } // End if
   });
+
+  window.sr = ScrollReveal();
+  sr.reveal('.item');
 });
