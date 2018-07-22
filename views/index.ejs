@@ -8,6 +8,7 @@
   <title>
     <%= title %>
   </title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link rel='stylesheet' href='/css/bootstrap.min.css' />
   <link rel='stylesheet' href='/css/main.css' />
 </head>
@@ -15,7 +16,9 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-light fixed-top">
     <div class="container">
-      <img src="/img/tamar-logo.svg" alt="tamar-logo">
+      <a class="navbar-brand" href="#hero">
+        <img src="/img/tamar-logo.svg" alt="tamar-logo">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,8 +35,11 @@
             <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+        </div>
       </div>
-
     </div>
   </nav>
   <div class="container-fluid">
