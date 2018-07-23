@@ -321,9 +321,14 @@
           <div class="tamar-about">
             <div class="name">Tamar Prigat</div>
             <hr>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus id labore quo! Odio doloremque illum accusamus aliquam!
-                Sunt soluta quae dignissimos animi, quo sint laborum minus facilis, qui, quis eos!
+            <div class="phrase">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus id labore quo! Odio doloremque illum accusamus aliquam!
+              Sunt soluta quae dignissimos animi, quo sint laborum minus facilis, qui, quis eos!
+            </div>
+            <hr>
+            <div class="phrase">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus id labore quo! Odio doloremque illum accusamus aliquam!
+              Sunt soluta quae dignissimos animi, quo sint laborum minus facilis, qui, quis eos!
             </div>
           </div>
         </div>
@@ -341,7 +346,7 @@
             &key=AIzaSyA41mqDoE6CDAP3F3_3WwtMMQ_yM1dQ0ac" alt="">
         </div>
         <div class="contact-info">
-          <form action="/send-email" method="post" class="contact-form">
+          <form action="/send-email" method="post" onsubmit="handleEmailSubmit()" class="contact-form">
             <div class="form-group">
               <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email" required>
             </div>
@@ -354,7 +359,7 @@
             <button type="submit" class="btn btn-send-email">Submit</button>
             <div class="contact-details">
               <div class="detail">92 Ben-Yehuda st. Tel Aviv.</div>
-              <div class="detail">Tel: </div>
+              <div class="detail">Tel: +972 (0)54-247-0450</div>
               <div class="detail">Email: tprigat@gmail.com</div>
             </div>
           </form>
@@ -387,6 +392,20 @@
   <script src="/js/smoothScroll.js"></script>
   <script src="/js/scrollreveal.min.js"></script>
   <script src="/js/main.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112154592-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112154592-4');
+  </script>
+
 </body>
 
 </html>

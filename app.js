@@ -60,8 +60,8 @@ app.post("/send-email", function(req, res) {
   });
   let mailOptions = {
     from: req.body.name + " " + req.body.email,
-    to: "tprigat@gmail.com",
-    subject: "Website Inquiry",
+    to: "royprigat@gmail.com",
+    subject: "Tamar Website - Customer Inquiry",
     text: req.body.message,
     html: "<p>" + req.body.message + "</p>"
   };
@@ -69,7 +69,7 @@ app.post("/send-email", function(req, res) {
     if (error) {
       console.log(error);
     }
-    res.redirect("/");
+    res.redirect('/');
   });
 });
 
