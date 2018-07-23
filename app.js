@@ -31,6 +31,7 @@ app.use(sassMiddleware({
   sourceMap: true,
   outputStyle: 'compressed'
 }));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
