@@ -346,7 +346,7 @@
             &key=AIzaSyA41mqDoE6CDAP3F3_3WwtMMQ_yM1dQ0ac" alt="">
         </div>
         <div class="contact-info">
-          <form action="/send-email" method="post" onsubmit="handleEmailSubmit()" class="contact-form">
+          <form action="/send-email" method="post" class="contact-form">
             <div class="form-group">
               <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Email" required>
             </div>
@@ -383,8 +383,22 @@
         </div>
       </div>
     </footer>
+  </div>
 
-
+  <div class="modal fade" id="email-submit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" onclick="sendForm()">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Message Sent</h5>
+        </div>
+        <div class="modal-body">
+          Thank you, and we will get back to you soon!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="sendForm()">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="/js/jquery-3.3.1.min.js"></script>
