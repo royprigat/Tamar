@@ -60,7 +60,7 @@ app.post("/send-email", function(req, res) {
   });
   let mailOptions = {
     from: req.body.name + " " + req.body.email,
-    to: "royprigat@gmail.com",
+    to: "tprigat@gmail.com",
     subject: "Tamar Website - Customer Inquiry",
     text: req.body.message,
     html: "<p>" + req.body.message + "</p>"
