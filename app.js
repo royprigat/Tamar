@@ -48,7 +48,15 @@ app.post("/send-email", function(req, res) {
     host: 'smtp.gmail.com',
     port: 465,
     secure: true,
-
+    auth: {
+        type: 'OAuth2',
+        user: 'royprigat@gmail.com',
+        clientId: '350821797045-i34rn44a1k9lngvl1tm8fpsc71n65eai.apps.googleusercontent.com',
+        clientSecret: 'WOR5ar6FulYl4Nv_q72qGzNk',
+        refreshToken: '1/0O-DKC17Ip2Fm4t8SduwQCV1ZiHIZ8qScVm1-5RGpnM',
+        accessToken: 'ya29.GlsBBlAya59gc91GQ8aoWPYRyEkb2QAHnVaOKyyXjYf9eUzTMPRiSacWKJHXJZhujYDurzqDk8-fCZ-1h0oSNZ3AKem9S4y0_fEfHzbOiELkDqjMhbwcETgQJEDi',
+        expires: 1484314697598
+    }
   });
   let mailOptions = {
     from: req.body.name + " " + req.body.email,
