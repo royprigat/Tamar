@@ -44,7 +44,12 @@ app.use("/", indexRouter);
 // app.use('/users', usersRouter);
 
 app.post("/send-email", function(req, res) {
+  let transporter = nodeMailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
 
+  });
   let mailOptions = {
     from: req.body.name + " " + req.body.email,
     to: "tprigat@gmail.com",
